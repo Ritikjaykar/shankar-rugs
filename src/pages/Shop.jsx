@@ -25,7 +25,6 @@ const Shop = () => {
       id: 1,
       name: 'Traditional Persian Rug',
       category: 'hand-knotted',
-      price: 2499,
       image: 'https://images.unsplash.com/photo-1600166898405-da9535204843?w=500',
       size: "8' x 10'",
       material: 'Wool & Silk'
@@ -34,7 +33,6 @@ const Shop = () => {
       id: 2,
       name: 'Modern Abstract Design',
       category: 'hand-tufted',
-      price: 1899,
       image: 'https://images.unsplash.com/photo-1565624401737-2e93164e2ae1?w=500',
       size: "6' x 9'",
       material: 'Premium Wool'
@@ -43,7 +41,6 @@ const Shop = () => {
       id: 3,
       name: 'Geometric Pattern Rug',
       category: 'handloom',
-      price: 1299,
       image: 'https://images.unsplash.com/photo-1554995207-c18c203602cb?w=500',
       size: "5' x 8'",
       material: 'Cotton & Wool'
@@ -52,7 +49,6 @@ const Shop = () => {
       id: 4,
       name: 'Vintage Patchwork',
       category: 'patched-work',
-      price: 999,
       image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500',
       size: "4' x 6'",
       material: 'Recycled Wool'
@@ -61,7 +57,6 @@ const Shop = () => {
       id: 5,
       name: 'Luxury Leather Carpet',
       category: 'leather-carpet',
-      price: 3499,
       image: 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=500',
       size: "8' x 10'",
       material: 'Genuine Leather'
@@ -70,7 +65,6 @@ const Shop = () => {
       id: 6,
       name: 'Natural Jute Rug',
       category: 'jute-rugs',
-      price: 599,
       image: 'https://images.unsplash.com/photo-1584638369949-5fc0531c4e2f?w=500',
       size: "5' x 7'",
       material: 'Natural Jute'
@@ -79,7 +73,6 @@ const Shop = () => {
       id: 7,
       name: 'Scandinavian Flat Weave',
       category: 'flat-weave',
-      price: 899,
       image: 'https://images.unsplash.com/photo-1588471980726-8346cb477a33?w=500',
       size: "6' x 9'",
       material: 'Cotton'
@@ -88,7 +81,6 @@ const Shop = () => {
       id: 8,
       name: 'Contemporary Designer Rug',
       category: 'designers-edition',
-      price: 4999,
       image: 'https://images.unsplash.com/photo-1604599455544-e72127c8fab7?w=500',
       size: "9' x 12'",
       material: 'Silk & Wool'
@@ -97,7 +89,6 @@ const Shop = () => {
       id: 9,
       name: 'Eco-Friendly Coir Mat',
       category: 'coir-mats',
-      price: 299,
       image: 'https://images.unsplash.com/photo-1578507065211-1c4e99a5fd24?w=500',
       size: "3' x 5'",
       material: 'Natural Coir'
@@ -106,7 +97,6 @@ const Shop = () => {
       id: 10,
       name: 'Royal Persian Design',
       category: 'hand-knotted',
-      price: 5999,
       image: 'https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=500',
       size: "10' x 14'",
       material: 'Pure Silk'
@@ -115,7 +105,6 @@ const Shop = () => {
       id: 11,
       name: 'Bohemian Hand Tufted',
       category: 'hand-tufted',
-      price: 1599,
       image: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=500',
       size: "5' x 8'",
       material: 'Wool'
@@ -124,7 +113,6 @@ const Shop = () => {
       id: 12,
       name: 'Striped Handloom Runner',
       category: 'handloom',
-      price: 799,
       image: 'https://images.unsplash.com/photo-1585847439961-0136a3c5c58e?w=500',
       size: "3' x 10'",
       material: 'Cotton'
@@ -171,8 +159,6 @@ const Shop = () => {
               className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
             >
               <option value="featured">Featured</option>
-              <option value="price-low">Price: Low to High</option>
-              <option value="price-high">Price: High to Low</option>
               <option value="name">Name: A to Z</option>
             </select>
 
@@ -193,91 +179,6 @@ const Shop = () => {
             </div>
           </div>
         </div>
-
-        {/* Filter Panel */}
-        {filterOpen && (
-          <div className="bg-white p-6 rounded-lg shadow-md mb-8">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-              <div>
-                <h3 className="font-semibold mb-3">Price Range</h3>
-                <div className="space-y-2">
-                  <label className="flex items-center">
-                    <input type="checkbox" className="mr-2" />
-                    <span className="text-sm">Under $500</span>
-                  </label>
-                  <label className="flex items-center">
-                    <input type="checkbox" className="mr-2" />
-                    <span className="text-sm">$500 - $1000</span>
-                  </label>
-                  <label className="flex items-center">
-                    <input type="checkbox" className="mr-2" />
-                    <span className="text-sm">$1000 - $2500</span>
-                  </label>
-                  <label className="flex items-center">
-                    <input type="checkbox" className="mr-2" />
-                    <span className="text-sm">Over $2500</span>
-                  </label>
-                </div>
-              </div>
-
-              <div>
-                <h3 className="font-semibold mb-3">Size</h3>
-                <div className="space-y-2">
-                  <label className="flex items-center">
-                    <input type="checkbox" className="mr-2" />
-                    <span className="text-sm">Small (3' x 5')</span>
-                  </label>
-                  <label className="flex items-center">
-                    <input type="checkbox" className="mr-2" />
-                    <span className="text-sm">Medium (5' x 8')</span>
-                  </label>
-                  <label className="flex items-center">
-                    <input type="checkbox" className="mr-2" />
-                    <span className="text-sm">Large (8' x 10')</span>
-                  </label>
-                  <label className="flex items-center">
-                    <input type="checkbox" className="mr-2" />
-                    <span className="text-sm">Extra Large (9' x 12'+)</span>
-                  </label>
-                </div>
-              </div>
-
-              <div>
-                <h3 className="font-semibold mb-3">Material</h3>
-                <div className="space-y-2">
-                  <label className="flex items-center">
-                    <input type="checkbox" className="mr-2" />
-                    <span className="text-sm">Wool</span>
-                  </label>
-                  <label className="flex items-center">
-                    <input type="checkbox" className="mr-2" />
-                    <span className="text-sm">Silk</span>
-                  </label>
-                  <label className="flex items-center">
-                    <input type="checkbox" className="mr-2" />
-                    <span className="text-sm">Cotton</span>
-                  </label>
-                  <label className="flex items-center">
-                    <input type="checkbox" className="mr-2" />
-                    <span className="text-sm">Jute</span>
-                  </label>
-                </div>
-              </div>
-
-              <div>
-                <h3 className="font-semibold mb-3">Color</h3>
-                <div className="flex flex-wrap gap-2">
-                  <button className="w-8 h-8 rounded-full bg-red-500 border-2 border-gray-300"></button>
-                  <button className="w-8 h-8 rounded-full bg-blue-500 border-2 border-gray-300"></button>
-                  <button className="w-8 h-8 rounded-full bg-green-500 border-2 border-gray-300"></button>
-                  <button className="w-8 h-8 rounded-full bg-yellow-500 border-2 border-gray-300"></button>
-                  <button className="w-8 h-8 rounded-full bg-gray-500 border-2 border-gray-300"></button>
-                  <button className="w-8 h-8 rounded-full bg-purple-500 border-2 border-gray-300"></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
 
         {/* Products Grid/List */}
         <div className={viewMode === 'grid' 
@@ -303,17 +204,14 @@ const Shop = () => {
                 <h3 className="font-semibold text-lg mb-2 text-gray-900 group-hover:text-primary transition">
                   {product.name}
                 </h3>
-                <div className="flex items-center gap-2 text-sm text-gray-600 mb-2">
+                <div className="flex items-center gap-2 text-sm text-gray-600 mb-4">
                   <span>{product.size}</span>
                   <span>•</span>
                   <span>{product.material}</span>
                 </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-2xl font-bold text-primary">${product.price}</span>
-                  <button className="bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary transition text-sm">
-                    View Details
-                  </button>
-                </div>
+                <button className="bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary transition text-sm">
+                  View Details
+                </button>
               </div>
             </Link>
           ))}
