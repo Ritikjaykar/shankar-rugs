@@ -53,19 +53,19 @@ const Footer = () => {
             <p>Sunday : Closed</p>
           </div>
           <div className="flex justify-center space-x-6 mb-6">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-primary transition">
+            <a href="https://www.facebook.com/shahkarrugs2015/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-primary transition">
               <Facebook className="w-5 h-5" />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-primary transition">
+            <a href="https://www.instagram.com/shahkarrugs/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-primary transition">
               <Instagram className="w-5 h-5" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-primary transition">
+            <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEqcfrND_iGOQAAAZpaf0bQwwni5v5KynIJAt-q8kKcTNC8_YQQNqGJvFC6lgxBCFsjyRfszqB0YmxWpuYwmHlaAZ0gGyl_AC14A9CCItwR3xG1uezCZ8cw_frq4RKnLAabQac=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fshahkar-rugs-aaaaa4279" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-primary transition">
               <Linkedin className="w-5 h-5" />
             </a>
-            <a href="https://wa.me/918960430890" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-primary transition">
+            <a href="https://api.whatsapp.com/send/?phone=918960430890&text=Hello+%21+I+am+interested+in+you+products+and+would+like+to+buy+them+.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-primary transition">
               <Phone className="w-5 h-5" />
             </a>
-            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-primary transition">
+            <a href="https://www.google.co.in/maps/place/Shahkar+Rugs/@25.3929864,82.570311,17z/data=!3m1!4b1!4m5!3m4!1s0x398fe0a6ec57e813:0xa0ad0462869b37a1!8m2!3d25.3929864!4d82.5724997" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-primary transition">
               <MapPin className="w-5 h-5" />
             </a>
           </div>

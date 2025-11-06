@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
+import logo from '../assets/logo.png'; 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,24 +33,41 @@ const Navbar = () => {
     <nav className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
-            <div className="bg-primary p-2 rounded-lg">
-              <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
-              </svg>
-            </div>
-            <div>
-              <h1 className="text-2xl font-bold text-primary" style={{fontFamily: 'Brush Script MT, cursive'}}>Shahkar Rugs</h1>
-              <p className="text-xs text-gray-600 hidden sm:block">Manufacturer and Exporter</p>
-            </div>
-          </Link>
+{/*  Logo */}
+<Link to="/" className="flex items-center space-x-3">
+  <div className="p-[3px] rounded-xl bg-gradient-to-r">
+    <img
+      src={logo}
+      alt="Shahkar Rugs Logo"
+      className="h-12 w-12 rounded-lg object-cover bg-white "
+    />
+  </div>
+  <div>
+    <h1
+      className="text-2xl font-extrabold text-[#6B3A00]"
+      style={{ fontFamily: 'Playfair Display, serif' }}
+    >
+      Shahkar Rugs
+    </h1>
+    <p className="text-sm text-gray-500 hidden sm:block">
+      Manufacturer and Exporter
+    </p>
+  </div>
+</Link>
+
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center space-x-8">
-            <Link to="/" className="text-gray-700 hover:text-primary transition">Home</Link>
-            <Link to="/custom-rug-form" className="text-gray-700 hover:text-primary transition">Custom Rug Form</Link>
-            
+            <Link to="/" className="text-gray-700 hover:text-primary transition">
+              Home
+            </Link>
+            <Link
+              to="/custom-rug-form"
+              className="text-gray-700 hover:text-primary transition"
+            >
+              Custom Rug Form
+            </Link>
+
             {/* Our Collection Dropdown */}
             <div className="relative group">
               <button className="flex items-center text-gray-700 hover:text-primary transition">
@@ -68,7 +86,12 @@ const Navbar = () => {
               </div>
             </div>
 
-            <Link to="/contact" className="text-gray-700 hover:text-primary transition">Contact Us</Link>
+            <Link
+              to="/contact"
+              className="text-gray-700 hover:text-primary transition"
+            >
+              Contact Us
+            </Link>
 
             {/* More Dropdown */}
             <div className="relative group">
@@ -101,14 +124,26 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="lg:hidden pb-4">
-            <Link to="/" className="block py-2 text-gray-700 hover:text-primary">Home</Link>
-            <Link to="/custom-rug-form" className="block py-2 text-gray-700 hover:text-primary">Custom Rug Form</Link>
-            
+            <Link to="/" className="block py-2 text-gray-700 hover:text-primary">
+              Home
+            </Link>
+            <Link
+              to="/custom-rug-form"
+              className="block py-2 text-gray-700 hover:text-primary"
+            >
+              Custom Rug Form
+            </Link>
+
             <button
               onClick={() => setCollectionOpen(!collectionOpen)}
               className="flex items-center justify-between w-full py-2 text-gray-700 hover:text-primary"
             >
-              Our Collection <ChevronDown className={`w-4 h-4 transition-transform ${collectionOpen ? 'rotate-180' : ''}`} />
+              Our Collection{' '}
+              <ChevronDown
+                className={`w-4 h-4 transition-transform ${
+                  collectionOpen ? 'rotate-180' : ''
+                }`}
+              />
             </button>
             {collectionOpen && (
               <div className="pl-4 space-y-2">
@@ -125,13 +160,23 @@ const Navbar = () => {
               </div>
             )}
 
-            <Link to="/contact" className="block py-2 text-gray-700 hover:text-primary">Contact Us</Link>
+            <Link
+              to="/contact"
+              className="block py-2 text-gray-700 hover:text-primary"
+            >
+              Contact Us
+            </Link>
 
             <button
               onClick={() => setMoreOpen(!moreOpen)}
               className="flex items-center justify-between w-full py-2 text-gray-700 hover:text-primary"
             >
-              More <ChevronDown className={`w-4 h-4 transition-transform ${moreOpen ? 'rotate-180' : ''}`} />
+              More{' '}
+              <ChevronDown
+                className={`w-4 h-4 transition-transform ${
+                  moreOpen ? 'rotate-180' : ''
+                }`}
+              />
             </button>
             {moreOpen && (
               <div className="pl-4 space-y-2">

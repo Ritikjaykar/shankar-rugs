@@ -97,14 +97,6 @@ const Home = () => {
               >
                 Designer Rugs
               </Link>
-              <a 
-                href="https://shahkarrugs63.trustpass.alibaba.com/company_profile.html" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white hover:bg-gray-100 text-gray-900 px-8 py-3 rounded-lg font-semibold transition transform hover:scale-105 text-center"
-              >
-                Buy On Alibaba.com
-              </a>
               <Link 
                 to="/custom-rug-form" 
                 className="border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-3 rounded-lg font-semibold transition text-center"
